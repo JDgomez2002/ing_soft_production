@@ -146,7 +146,7 @@ const Sidebar = () => {
             {!isCollapsed.colapsed && (
               <Box display="flex" justifyContent="space-between" alignItems="center" ml="15px">
                 <Typography variant="h3" color={colors.grey[100]}>
-                  {user.role}
+                  {user.role} UserRole
                 </Typography>
                 <IconButton onClick={() => setIsCollapsed({ colapsed: !isCollapsed.colapsed })}>
                   <MenuOutlinedIcon />
@@ -176,7 +176,7 @@ const Sidebar = () => {
                   fontSize={'25px'}
                   sx={{ m: '10px 0 0 0' }}
                 >
-                  {user.user_id}
+                  {user.user_id} UserName
                 </Typography>
               </Box>
             </Box>

@@ -7,15 +7,6 @@ const Page = () => {
 
   return (
     <Switch>
-      {/* <Route path="/Proj2_DBI/MainPage">
-          <MainPage />
-      </Route> */}
-      {/* <Route path="/Proj2_DBI/SignIn">
-        <SignIn />
-      </Route> */}
-      {/* <Route path="/Proj2_DBI/InfoPatient">
-        <InfoPatient fullscreen={true} />
-      </Route> */}
       <Route path="/MainPage">
         <MainPage/>
       </Route>

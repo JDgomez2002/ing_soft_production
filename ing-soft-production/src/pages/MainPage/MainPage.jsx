@@ -5,15 +5,10 @@ import { CssBaseline, ThemeProvider } from '@mui/material'
 import Topbar from './scenes/global/Topbar'
 import  Sidebar  from './scenes/global/Sidebar'
 import './MainPage.css'
+import HomePage from './scenes/HomePage/HomePage'
 // import Incidence from '../Incidence'
 // import Insert_Incidence from '../Insert_Incidence'
-import HomePage from './scenes/HomePage/HomePage'
-// import Inventory from '../inventory'
-// import Update_Incidence from '../Update_Incidence'
-// import ChangeDoctorHospital from '../ChangeDoctorHospital'
-// import InfoDoctor from '../InfoDoctor'
-// import InfoPatient from '../InfoPatient'
-// import Otros from '../Otros'
+
 
 function MainPage() {
   const [user, setUser] = useState({})
@@ -74,30 +69,6 @@ function MainPage() {
           <main className="content">
             <Topbar setIsSidebar={setIsSidebar}/>
             <Switch>
-              <Route path="/Proj2_DBI/MainPage/incidence/">
-                {/* <Incidence/> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/insert-incidence/">
-                {/* <Insert_Incidence /> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/inventory/">
-                {/* <Inventory/> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/update-incidence/">
-                {/* <Update_Incidence/> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/hospitals/">
-                {/* <ChangeDoctorHospital/> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/new-doctor/">
-                {/* <InfoDoctor fullscreen={false} /> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/new-patient/">
-                {/* <InfoPatient fullscreen={false}/> */}
-              </Route>
-              <Route path="/Proj2_DBI/MainPage/other/">
-                {/* <Otros/> */}
-              </Route>
               <Route path="/MainPage/">
                 <HomePage/>
               </Route>
