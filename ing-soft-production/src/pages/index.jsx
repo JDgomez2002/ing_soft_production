@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Login from './Login'
+import Landing from './Landing'
 import { Switch, Route } from 'react-router-dom'
 import MainPage from './MainPage'
 
@@ -18,7 +19,7 @@ const Page = () => {
         <p>Signin</p>
       </Route>
       <Route path="/Landing">
-        <p>Signin</p>
+        <Landing />
       </Route>
       {/*MAIN */}
       <Route path="/">

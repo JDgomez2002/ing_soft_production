@@ -1,0 +1,15 @@
+.navbar {
+    /*New css feature https: //developer.mozilla.org/es/docs/Web/CSS/position*/
+    position: -webkit-sticky;
+    position: sticky;
+
+    /*To ensure its over everything*/
+    top: -1px;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 2px solid #000;
+    background-color: #fff;
+
+    transition: flex 200ms ease;
+    color: #000;
+}
